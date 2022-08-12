@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/estilos.css">
+    <title>Editar Alumno</title>
+</head>
+<body>
+    
+    <div class='form-register'>
+        <form action="/alumnos/actualizar/<%=reg[0].Matricula%>" method='post' id='formulario'>
+            <div class='form-group'>
+                <label for='lblMatricula'>MATRICULA</label>
+                <input type='text' class='tfMatricula' name='tfMatricula' value = "<%= reg[0].Matricula %>">
+            </div>
+            <div class="row">
+                <div class='col-4'>
+    
+                <label for='lblNombre'>NOMBRE</label>
+                <input type='text' class='tfNombre' name='tfNombre' value = "<%= reg[0].Nombre %>">
+            </div>
+            <div class='col-4'>
+                <label for='lblApellidoPaterno'>APELLIDO PATERNO</label>
+                <input type='text' class='tfApellidoPaterno' name='tfApellidoPaterno' value = "<%= reg[0].ApellidoPaterno %>">
+            </div>
+            <div class='col-4'>
+                <label for='lblApellidoMaterno'>APELLIDO MATERNO</label>
+                <input type='text' class='tfApellidoMaterno' name='tfApellidoMaterno' value = "<%= reg[0].ApellidoMaterno %>"> 
+            </div>
+        </div>
+
+        <div class="row">
+            <div class='col-4'>
+                <label for='lblDdi'>DDI</label>
+                <input type='number' class='tfDdi' name='tfDdi' value = "<%= reg[0].Ddi %>"> 
+            </div>
+            <div class='col-4'>
+                <label for='lblDwi'>DWI</label>
+                <input type='number' class='tfDwi' name='tfDwi' value = "<%= reg[0].Dwi %>">
+            </div>
+            <div class='col-4'>
+                <label for='lblEcbd'>ECBD</label>
+                <input type='number' class='tfEcbd' name='tfEcbd' value = "<%= reg[0].Ecbd %>">
+            </div>
+            <button type='submit' class='btnRegistrar' name='btnRegistrar'>Guardar</button>
+            <a class="fcc-btn" href="/alumnos">Regresar</a>  
+            </div>    
+        </div>    
+        </div>
+    </form> 
+</div> 
+</body>
+</html>

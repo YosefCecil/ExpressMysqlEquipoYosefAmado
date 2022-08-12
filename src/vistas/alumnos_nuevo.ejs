@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/estilos.css">
+
+    <title>Lista de alumnos</title>
+
+  </head>
+  <body>
+
+    <div>
+    </div>
+    <div class='form-register'>
+        <div class="col align-self-center">
+        <form action="/alumnos/agregar" method='post' id='formulario'>
+            <div class='form-group'>
+                <label for='lblMatricula'>MATRICULA</label>
+                <input type='number' class='tfMatricula' name='tfMatricula'> 
+            </div>
+            <div class="row">
+            <div class='col-4'>
+                <label for='lblNombre'>NOMBRE</label>
+                <input type='text' class='tfNombre' name='tfNombre'>
+            </div>
+                <div class='col-4'>
+                <label for='lblApellidoPaterno'>APELLIDO PATERNO</label>
+                <input type='text' class='tfApellidoPaterno' name='tfApellidoPaterno'>
+            </div>
+                <div class='col-4'>
+                <label for='lblApellidoMaterno'>APELLIDO MATERNO</label>
+                <input type='text' class='tfApellidoMaterno' name='tfApellidoMaterno'>
+            </div> 
+        </div>
+
+        <div class="row">
+            <div class='col-4'>
+                <label for='lblDdi'>DDI</label>
+                <input type='number' class='tfDdi' name='tfDdi'> 
+            </div>
+            <div class='col-4'>
+                <label for='lblDwi'>DWI</label>
+                <input type='number' class='tfDwi' name='tfDwi'>
+            </div>
+            <div class='col-4'>
+                <label for='lblEcbd'>ECBD</label>
+                <input type='number' class='tfEcbd' name='tfEcbd'>
+            </div>
+            <button type='submit' class='btnRegistrar' name='btnRegistrar'>Registrar</button>
+        <a class="fcc-btn" href="/alumnos">Regresar</a>  
+            </div>    
+        </div>    
+        </div>
+    </form> 
+</div> 
+</body>
+</html>
